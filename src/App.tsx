@@ -58,7 +58,7 @@ function App() {
       };
       console.log(answerObject);
 
-      setUserAns( [...userAns, answerObject]);
+      setUserAns((prev: any) => [...prev, answerObject]);
     }
   };
 
